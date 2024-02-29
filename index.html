@@ -1,190 +1,400 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/output.css">
-    <title>Boubacar Kina</title>
-</head>
-<body class="m-5">
-
-    <nav class="flex justify-center space-x-4 pb-5">
-        <a href="#presentation" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Presentation</a>
-        <a href="#projets" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projets</a>
-        <a href="#contact" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Contact</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Kina</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Boubacar Kina</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-
-    <!-- presentation -->
-    <section class="container mx-auto mt-5 pt-5" id="presentation">
-        <div class="lg:columns-2 md:columns-2 sm:columns-1">
-            <div>
-                <h1 class="text-4xl font-bold">Hello! I'm <span class="text-lime-500">Boubacar Kina</span></h1>
-                <h2 class="text-4xl font-bold text-rose-500">I'm a software developer</h2>
-                <p class="text-lg font-medium mt-4">
-                    I can help you build a product, feature or website
-                     Look through some of my work and experience! If you like
-                      what you see and have a project you need coded, don't hesitate to contact me.
-                </p>
-                
-                <ul class="list-none flex space-x-4 mt-4">
-                    <li class="">
-                        <a href="https://github.com/Kina98">
-                            <img src="Icons/github.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="https://twitter.com/KinaBoubacar">
-                            <img src="Icons/twitter.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.linkedin.com/in/boubcar-kina-16265121a">
-                            <img src="Icons/Linkedin icon.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.facebook.com/boubacar.kina">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.instagram.com/boubacar.kina">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                        </a>
-                    </li>
-                </ul>
-                <button type="submit" class="inline-flex items-center py-2 px-3 bg-red-500 text-white rounded-lg font-medium hover:bg-red-500 shadow-lg mt-4">Download CV</button>
-            </div>
-            <div>
-                <img class="w-full rounded-full" src="images/B.png" alt="Ma photo">
-            </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Boubacar Kina</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </section>
-
-    <!-- mes projets -->
-    <section class="container mt-20 mx-auto" id="projets">
-        <h1 class="text-center text-4xl font-bold">My projects</h1>
-        <div class="lg:columns-2 md:columns-2 sm:columns-1 mt-7">
-
-            <div class="border border-gray-200 shadow-lg rounded-lg">
-                <a href="#">
-                    <img class="rounded-t-lg" src="images/Img2.webp" alt="couverture">
-                </a>
-                <div class="p-5 text-center">
-                    <a href="#">
-                        <h1 class="mb-2 text-2xl font-bold text-gray-700">Tableau de Mendleiv</h1>
-                    </a>
-                    <a href="https://kina98.github.io/Tableau-de-Mendeleiv/" class="inline-flex items-center py-2 px-3 bg-blue-700 text-white rounded-lg text-sm font-medium hover:bg-blue-900">See project</a>
-                </div>
-            </div>
-            
-            <div class="border border-gray-200 shadow-lg rounded-lg">
-                <a href="#">
-                    <img class="rounded-t-lg" src="images/Img6.webp" alt="couverture">
-                </a>
-                <div class="p-5 text-center">
-                    <a href="#">
-                        <h1 class="mb-2 text-2xl font-bold text-gray-700">Clipboard</h1>
-                    </a>
-                    <a href="https://kina98.github.io/clipboard/" class="inline-flex items-center py-2 px-3 bg-blue-700 text-white rounded-lg text-sm font-medium hover:bg-blue-900">See project</a>
-                </div>
-            </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-
-        <div class="lg:columns-2 md:columns-2 sm:columns-1 mt-7">
-
-            <div class="border border-gray-200 shadow-lg rounded-lg">
-                <a href="#">
-                    <img class="rounded-t-lg" src="images/Img5.jpg" alt="couverture">
-                </a>
-                <div class="p-5 text-center">
-                    <a href="#">
-                        <h1 class="mb-2 text-2xl font-bold text-gray-700">Enval</h1>
-                    </a>
-                    <a href="https://kina98.github.io/Enval/" class="inline-flex items-center py-2 px-3 bg-blue-700 text-white rounded-lg text-sm font-medium hover:bg-blue-900">See project</a>
-                </div>
-            </div>
-            
-            <div class="border border-gray-200 shadow-lg rounded-lg">
-                <a href="#">
-                    <img class="rounded-t-lg" src="images/Img3.jpg" alt="couverture">
-                </a>
-                <div class="p-5 text-center">
-                    <a href="#">
-                        <h1 class="mb-2 text-2xl font-bold text-gray-700">Portfolio</h1>
-                    </a>
-                    <a href="https://kina98.github.io/portfolio/" class="inline-flex items-center py-2 px-3 bg-blue-700 text-white rounded-lg text-sm font-medium hover:bg-blue-900">See project</a>
-                </div>
-            </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/C.png" style="border-radius: 20%;" alt="Boubacar Kina picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Boubacar Kina</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CVkina.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/boubacar-kina-16265121a" target="_blank">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <a href="https://github.com/Kina98" target="_blank">
+            <img src="./assets/github.png" alt="My Github profile" class="icon" />
+          </a>
+        </div>
+      </div>
     </section>
-
-    <!-- mon contact -->
-    <section class="container border mx-auto my-50 rounded shadow-lg pt-7 mt-20" id="contact">
-        <h1 class="text-center text-4xl font-bold mb-6">Contact me</h1>
-        <form action="">
-            <div class="mb-6">
-                <label for="name" class="block mb-2 text-sm font-medium text-gray-500">Name</label>
-                <input type="text" name="" id="name" class="border-gray-300 bg-gray-300 text-sm rounded-lg py-2 w-full focus:ring-orange-500">
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/AAA.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year <br />Web Development</p>
             </div>
-            <div class="mb-6">
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-500">E-mail</label>
-                <input type="email" name="email" id="email" class="border-gray-300 bg-gray-300 text-sm rounded-lg py-2 w-full focus:ring-orange-500">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>DUT Computer Science at <a href="https://udh.edu.ne/" style="color: rgb(119, 210, 21); text-decoration: underline;" target="_blank" rel="noopener noreferrer">Tahoua University</a><br />Full Stack Web Dev at <a href="https://www.codeloccol.org/" style="color: rgb(119, 210, 21); text-decoration: underline;" target="_blank" rel="noopener noreferrer">CodeLoccol</a></p>
             </div>
-            <div class="mb-6">
-                <textarea name="" class="border-gray-300 bg-gray-300 text-sm rounded-lg w-full focus:ring-orange-500" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="mb-6">
-                <button type="submit" class="inline-flex items-center py-2 px-3 bg-blue-700 text-white rounded-lg text-sm font-medium hover:bg-blue-900">
-                    Envoyer
-                </button>
-            </div>
-        </form>
+          </div>
+          <div class="text-container">
+            <p style="color: black;">
+                I am a web developer with a passion for creating 
+                user-friendly and visually appealing websites and
+                applications. I have experience in a variety of 
+                programming languages and technologies, including 
+                JavaScript, PHP, React, and Laravel.
+                I am always looking for new challenges and opportunities 
+                to learn and grow. I am confident that I can use my skills 
+                and experience to help you achieve your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
-
-
-    <footer class="bg-gray-200 py-10 mx-auto container mt-20">
-        <div class="container mx-auto px-2 text-white">
-            <div class="columns-2">
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
-                    <a class="text-black font-bold" href="mailto:boubacarkina1@gmail.com">boubacarkina1@gmail.com</a>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
-                    <ul class="list-none flex space-x-4 mt-4">
-                        <li class="">
-                            <a href="https://github.com/Kina98">
-                                <img src="Icons/github.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="https://twitter.com/KinaBoubacar">
-                                <img src="Icons/twitter.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="https://www.linkedin.com/in/boubcar-kina-16265121a">
-                                <img src="Icons/Linkedin icon.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="https://www.facebook.com/boubacar.kina">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="https://www.instagram.com/boubacar.kina">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                            </a>
-                        </li>
-                    </ul>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:boubacarkina1@gmail.com">boubacarkina1@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/boubacar-kina-16265121a" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Boubacar Kina.</p>
     </footer>
-
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
